@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6B98E1;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.container {
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    width: 480px;
+    height: 480px;
+    margin: 40px auto;
+    
+}
+.chess-board {
+  border-radius: 30px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: gray;
+}
+
+.square i {
+    font-size: 25px;
+}
+
+.chess-board .square:nth-child(-n+16) i {
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
